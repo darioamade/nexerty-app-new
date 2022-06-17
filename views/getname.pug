@@ -1,0 +1,34 @@
+extends base
+
+block content
+    .get-started
+        .get-started-content
+            .get-started-content-wrapper
+                ul.header-nav__list
+                    svg.icon-book.icon-book-color
+                        use(href='/img/sprite1.svg#icon-arrow_left')
+                    li.header-nav__list-item
+                        a.nav__link(href='/get-started/email') back
+                p.heading-2 What is your name?
+                form.form.form--login
+                    .form__group
+                        input#email.form__input(type='FirtsName', placeholder='First name', required)
+                    .form__group
+                        input#email.form__input(type='LastName', placeholder='Last name', required)
+                    
+                a(href='/get-started/email-address')
+                    button.btn-more(style='border-color: #fff;') Next
+                    
+        //- .get-started-content
+        //-     .get-started-content-wrapper
+        //-         ul.header-nav__list
+        //-             svg.icon-book.icon-book-color
+        //-                 use(href='/img/sprite1.svg#icon-arrow_left')
+        //-             li.header-nav__list-item
+        //-                 a.nav__link(href='/get-started/email') back
+        //-         p.heading-2 We'll arrange your home visit over the email.
+        //-         p.text-plain We'll only use your number to arrange a free home valuation.
+        //-              We won't ever share your details without your consent.
+
+        //-         a(href='/for-sale')
+        //-             button.btn-more(style='border-color: #fff;') Save and continue
